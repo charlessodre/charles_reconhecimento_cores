@@ -22,6 +22,7 @@ Onde:  H = Hue (matiz), S = Saturation (saturação) e V = Value (valor). </p>
 
 ##### Abaixo temos uma representação do modelo de cores HSV:
 <img src="hsv.png" width="400px" hight="400px">
+
 *imagem retirada do site https://blog.socratesk.com/blog/2018/08/16/opencv-hsv-selector*
  
 ##### Exemplo da seleção dos limites de agumas cores:
