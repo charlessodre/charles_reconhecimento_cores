@@ -35,8 +35,8 @@ def get_moments_centroid(moments):
 
 
 def get_contours(color_mask):
-    image, contours = cv2.findContours(color_mask.copy(), cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
-    return image
+    contours, _ = cv2.findContours(color_mask.copy(), cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+    return contours
 
 
 def get_color_mask(hsv_image, lower_color, upper_color):
