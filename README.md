@@ -12,7 +12,7 @@
 
 
 ## Informação sobre os arquivos:
-<p> <b>segmentacao_cores.py </b> - Esse é o programa principal que realiza o reconhecimento das cores. </p>
+<p> <b>reconhecimento_cores.py </b> - Esse é o programa principal que realiza o reconhecimento das cores. </p>
 <p> <b>encontrar_valores_hsv.py </b> - Esse programa ajuda a encontrar valores de limite HSV da cor que deseja reconhecer. 
 Esses valores serão utilizados nas variáveis <b>lower_XXX </b> e <b> upper_XXX</b> do programa <b>segmentacao_cores.py </b> </p>
 <p> É importante ter que em mente que a luz do ambiente influencia diretamente na variação das cores que estamos mapeando os limites.</p>

@@ -3,7 +3,7 @@ import numpy as np
 
 print(cv2.__version__)
 
-# define range color in HSV
+# define range colors in HSV
 
 # vermelho
 lower_red = np.array([166, 174, 74])
