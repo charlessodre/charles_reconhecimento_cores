@@ -17,20 +17,20 @@
 <p> É importante ter que em mente que a luz do ambiente influencia diretamente na variação das cores que estamos mapeando os limites.</p>
 
 ##### Abaixo temos o que é o modelo de cores HSV:
-![hsv](hsv.png | width=600)   
+<img src="hsv.png" width="300px" hight="300px">
 
 *imagem retirada do site https://blog.socratesk.com/blog/2018/08/16/opencv-hsv-selector*
  
 ##### Exemplo da seleção dos limites de agumas cores:
 
 ** Azul **   
-![limites_hsv_cor_azul](limites_hsv_cor_azul.jpg)
+<img src="limites_hsv_cor_azul.jpg" width="300px" hight="300px">
 
 ** Amarelo **   
-![limites_hsv_cor_amarela](limites_hsv_cor_amarela.jpg)
+<img src="limites_hsv_cor_amarela.jpg" width="300px" hight="300px">
 
 ** Vermelho **   
-![limites_hsv_cor_vermelha](limites_hsv_cor_vermelha.jpg)
+<img src="limites_hsv_cor_vermelha.jpg" width="300px" hight="300px">
    
 <p> <b>segmentacao_cores.py </b> - Esse programa realiza o reconhecimento das cores. </p>
 
