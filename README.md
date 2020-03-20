@@ -12,12 +12,12 @@
 
 
 ## Informação sobre os arquivos:
-
+<p> <b>segmentacao_cores.py </b> - Esse é o programa principal que realiza o reconhecimento das cores. </p>
 <p> <b>encontrar_valores_hsv.py </b> - Esse programa ajuda a encontrar valores de limite HSV, onde H = Hue (matiz), S = Saturation (saturação) e V = Value (valor), da cor que deseja reconhecer. Esses valores serão utilizados nas variáveis <b>lower_XXX </b> e <b> upper_XXX</b> do programa <b>segmentacao_cores.py </b> </p>
 <p> É importante ter que em mente que a luz do ambiente influencia diretamente na variação das cores que estamos mapeando os limites.</p>
 
-##### Abaixo temos uma imagem oo que seria o modelo de cores HSV:
-<img src="hsv.png" width="300px" hight="300px">
+##### Abaixo temos uma representação do modelo de cores HSV:
+<img src="hsv.png" width="400px" hight="400px">
 
 *imagem retirada do site https://blog.socratesk.com/blog/2018/08/16/opencv-hsv-selector*
  
@@ -32,7 +32,6 @@
 **Vermelho**   
 <img src="limites_hsv_cor_vermelha.jpg" hight="400px" width="400px">
    
-<p> <b>segmentacao_cores.py </b> - Esse programa realiza o reconhecimento das cores. </p>
 
 ##### Exemplo de cores reconhecidas:
 
