@@ -13,8 +13,11 @@
 
 ## Informação sobre os arquivos:
 <p> <b>segmentacao_cores.py </b> - Esse é o programa principal que realiza o reconhecimento das cores. </p>
-<p> <b>encontrar_valores_hsv.py </b> - Esse programa ajuda a encontrar valores de limite HSV, onde H = Hue (matiz), S = Saturation (saturação) e V = Value (valor), da cor que deseja reconhecer. Esses valores serão utilizados nas variáveis <b>lower_XXX </b> e <b> upper_XXX</b> do programa <b>segmentacao_cores.py </b> </p>
+<p> <b>encontrar_valores_hsv.py </b> - Esse programa ajuda a encontrar valores de limite HSV da cor que deseja reconhecer. 
+Esses valores serão utilizados nas variáveis <b>lower_XXX </b> e <b> upper_XXX</b> do programa <b>segmentacao_cores.py </b> </p>
 <p> É importante ter que em mente que a luz do ambiente influencia diretamente na variação das cores que estamos mapeando os limites.</p>
+
+<p> "HSV é a abreviatura para o sistema de cores formadas pelas componentes Hue, Saturation e Value." (wikipédia). Onde:  H = Hue (matiz), S = Saturation (saturação) e V = Value (valor). </p>
 
 ##### Abaixo temos uma representação do modelo de cores HSV:
 <img src="hsv.png" width="400px" hight="400px">
