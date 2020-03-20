@@ -10,13 +10,15 @@ def get_trackbar_values(filter_type, name_window, limits):
 
     for i in limits:
         for j in filter_type:
-            val = cv2.getTrackbarPos("{}_{}".format(j, i), name_window)
+            val = cv2.getTrackbarPos("{}-{}".format(j, i), name_window)
             values.append(val)
 
     return values
 
+
 def nothing(x):
     pass
+
 
 def show_trackbars(filter_type, name_window, limits):
     cv2.namedWindow(name_window)
@@ -27,7 +29,7 @@ def show_trackbars(filter_type, name_window, limits):
             value = 255
 
         for j in filter_type:
-            cv2.createTrackbar("{}_{}".format(j, i), name_window, value, 255, nothing)
+            cv2.createTrackbar("{}-{}".format(j, i), name_window, value, 255, nothing)
 
 
 show_trackbars(filter_type, name_window, limits)
