@@ -25,16 +25,30 @@ Onde:  H = Hue (matiz), S = Saturation (saturação) e V = Value (valor). </p>
 
 *imagem retirada do site https://blog.socratesk.com/blog/2018/08/16/opencv-hsv-selector*
  
-##### Exemplo da seleção dos limites de agumas cores:
+##### Exemplo da seleção dos limites de algumas cores:
+
+
+**Vermelho**   
+<img src="limites_hsv_cor_vermelha.jpg" hight="400px" width="400px">
+
+**Verde**   
+<img src="limites_hsv_cor_verde.jpg" hight="400px" width="400px">
 
 **Azul**   
 <img src="limites_hsv_cor_azul.jpg" hight="400px" width="400px">
 
+**Laranja**   
+<img src="limites_hsv_cor_laranja.jpg" hight="400px" width="400px">
+
 **Amarelo**   
 <img src="limites_hsv_cor_amarela.jpg" hight="400px" width="400px">
 
-**Vermelho**   
-<img src="limites_hsv_cor_vermelha.jpg" hight="400px" width="400px">
+**Roxo**   
+<img src="limites_hsv_cor_roxo.jpg" hight="400px" width="400px">
+
+**Rosa**   
+<img src="limites_hsv_cor_rosa.jpg" hight="400px" width="400px">   
+
    
 
 ##### Exemplo de cores reconhecidas:
