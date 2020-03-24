@@ -29,7 +29,7 @@ Onde:  H = Hue (matiz), S = Saturation (saturação) e V = Value (valor). </p>
 
 
 **Vermelho**   
-<img src="limites_hsv_cor_vermelha.jpg" hight="400px" width="400px">
+<img src="limites_hsv_cor_vermela.jpg" hight="400px" width="400px">
 
 **Verde**   
 <img src="limites_hsv_cor_verde.jpg" hight="400px" width="400px">
