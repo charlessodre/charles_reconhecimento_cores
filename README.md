@@ -49,7 +49,11 @@ Onde:  H = Hue (matiz), S = Saturation (saturação) e V = Value (valor). </p>
 **Rosa**   
 <img src="limites_hsv_cor_rosa.jpg" hight="400px" width="400px">   
 
-   
+**Marrom**   
+<img src="limites_hsv_cor_marrom.jpg" hight="400px" width="400px">  
+
+**Branco**   
+<img src="limites_hsv_cor_branca.jpg" hight="400px" width="400px">   
 
 ##### Exemplo de cores reconhecidas:
 

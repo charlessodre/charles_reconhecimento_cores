@@ -42,6 +42,7 @@ upper_white = np.array([255, 255, 255])
 lower_brown = np.array([157, 74, 0])
 upper_brown = np.array([223, 216, 70])
 
+
 def get_moments_centroid(moments):
     return (int(moments["m10"] / moments["m00"]), int(moments["m01"] / moments["m00"]))
 
@@ -61,22 +62,30 @@ def get_color_mask(hsv_image, lower_color, upper_color):
 
 def draw_color_contours(image, contours, contour_color):
     max_area = max(contours, key=cv2.contourArea)
-    rectangle = cv2.minAreaRect(max_area)
-    box = cv2.boxPoints(rectangle)
-    box_int64 = np.int0(box)
+    min_contour_area = 500
+    contourArea = cv2.contourArea(max_area)
 
-    cv2.drawContours(image, [box_int64], 0, contour_color, 2)
+    threshold_reached = contourArea > min_contour_area
+
+    if threshold_reached:
+        rectangle = cv2.minAreaRect(max_area)
+        box = cv2.boxPoints(rectangle)
+        box_int64 = np.int0(box)
+
+        cv2.drawContours(image, [box_int64], 0, contour_color, 3)
+
+    return threshold_reached
 
 
 def color_tracking(image, color_mask, contour_color, color_name):
     contours = get_contours(color_mask)
 
     if len(contours) > 0:
-        draw_color_contours(image, contours, contour_color)
-        moments = cv2.moments(contours[-1])
-        centroid = get_moments_centroid(moments)
-        # cv2.circle(frame, centroid, 5, contour_color, thickness=-1)
-        cv2.putText(image, color_name, centroid, cv2.FONT_HERSHEY_PLAIN, 1, contour_color)
+        if draw_color_contours(image, contours, contour_color):
+            moments = cv2.moments(contours[-1])
+            centroid = get_moments_centroid(moments)
+            # cv2.circle(frame, centroid, 5, contour_color, thickness=-1)
+            cv2.putText(image, color_name, centroid, cv2.FONT_HERSHEY_PLAIN, 1, contour_color)
 
 
 # Caputura o video
@@ -116,7 +125,7 @@ while True:
     color_tracking(frame, purple_mask, (255, 85, 170), 'roxo')
     color_tracking(frame, orange_mask, (0, 102, 255), 'laranja')
     color_tracking(frame, white_mask, (255, 255, 255), 'branco')
-    color_tracking(frame, brown_mask, (0, 51, 102), 'marron')
+    color_tracking(frame, brown_mask, (0, 51, 102), 'marrom')
 
     cv2.imshow("video", frame)
     save_frame.write(frame)
