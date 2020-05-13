@@ -1,5 +1,4 @@
 # Reconhecimento de cores com OpenCV 4.1.1
-# *** EM DESENVOLVIMENTO ***
 
 <p> O objetivo deste projeto é realizar alguns estudos/testes na área de visão computacional, especialmente em reconhecimento das cores de objetos. </p>
 
