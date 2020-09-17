@@ -4,7 +4,7 @@ import cv2
 filter_type = 'HSV'
 name_window = 'image'
 limits = ("min", "max")
-
+#limits = (400, 400)
 
 def get_trackbar_values(filter_type, name_window, limits):
     values = []
@@ -30,7 +30,10 @@ def show_trackbars(filter_type, name_window, limits):
         for j in filter_type:
             cv2.createTrackbar("{}-{}".format(j, i), name_window, value, 255, nothing)
 
+
 show_trackbars(filter_type, name_window, limits)
+
+# Captura o video
 webcam = cv2.VideoCapture(0)
 
 if not webcam.isOpened():
@@ -61,6 +64,6 @@ while True:
     if cv2.waitKey(1) & 0xFF == ord("q"):
         break
 
-# Release all resources.
+# Libera os recursos
 webcam.release()
 cv2.destroyAllWindows()

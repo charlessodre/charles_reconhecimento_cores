@@ -4,7 +4,7 @@ import numpy as np
 
 print(cv2.__version__)
 
-# define range colors in HSV
+# define o range das cores em HSV
 
 # vermelho
 lower_red = np.array([158, 232, 147])
@@ -88,7 +88,12 @@ def color_tracking(image, color_mask, contour_color, color_name):
             cv2.putText(image, color_name, centroid, cv2.FONT_HERSHEY_PLAIN, 1, contour_color)
 
 
-# Caputura o video
+#video_entrada = "./videos/Teste.mp4"
+
+# Acessa o video que será analisado.
+#webcam = cv2.VideoCapture(video_entrada)
+
+# Captura o video
 webcam = cv2.VideoCapture(0)
 _, frame = webcam.read()
 
@@ -96,6 +101,7 @@ _, frame = webcam.read()
 output_video = "./output/saida_video.mp4"
 save_frame = cv2.VideoWriter(output_video, cv2.VideoWriter_fourcc(*'mp4v'), 10,
                              (frame.shape[1], frame.shape[0]))
+
 
 if not webcam.isOpened():
     print("Could not open webcam!")
@@ -133,7 +139,7 @@ while True:
     if cv2.waitKey(1) & 0xFF == ord("q"):
         break
 
-# Release all resources.
+# Libera os recursos.
 save_frame.release()
 webcam.release()
 cv2.destroyAllWindows()
